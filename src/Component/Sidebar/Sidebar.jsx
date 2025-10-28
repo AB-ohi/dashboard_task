@@ -34,7 +34,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <header className="flex justify-between items-center  px-4 py-4 bg-gradient-to-r from-indigo-500 to-purple-600 shadow-lg md:hidden sticky top-0 z-50">
+      <header className="flex justify-between items-center  px-4 py-4 bg-gradient-to-r from-indigo-500 to-purple-600 shadow-lg md:hidden sticky top-0 z-50 h-10">
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="text-white focus:outline-none hover:bg-white/20 p-2 rounded-lg transition-all"
@@ -55,10 +55,10 @@ const Sidebar = () => {
         />
       )}
       <aside
-        className={`fixed md:static bg-white shadow-xl w-72 md:w-64 md:min-h-screen z-40 transform transition-all duration-300 ease-in-out
+        className={`fixed md:static bg-white shadow-xl w-72 md:w-64 md:min-h-screen z-40 transform transition-all duration-300 ease-in-out h-full
         ${isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"}`}
       >
-        <div className="bg-gradient-to-br md:visible invisible  from-indigo-500 to-purple-600 px-6 py-6 border-b border-purple-400">
+        <div className="bg-gradient-to-br hidden md:block  from-indigo-500 to-purple-600 px-6 py-6 border-b border-purple-400">
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center shadow-lg">

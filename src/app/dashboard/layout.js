@@ -3,7 +3,7 @@ import React from 'react'
 
 const dashboardLayout = ({children}) => {
   return (
-    <div className='flex'>
+    <div className='md:flex relative'>
         <Sidebar/>
       {children}
     </div>
