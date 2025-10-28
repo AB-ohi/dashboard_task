@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, Users, Package, BarChart3, Settings } from "lucide-react";
+import { Menu, X, Users, Package, Home , Settings } from "lucide-react";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,6 +12,7 @@ const Sidebar = () => {
   const navItems = [
     { name: "Leads", href: "/dashboard/leads", icon: Users, color: "blue" },
     { name: "Products", href: "/dashboard/products", icon: Package, color: "purple" },
+    { name: "Home", href: "/", icon: Home, color: "purple" },
   ];
 
   const getColorClasses = (color, isActive) => {
@@ -55,7 +56,7 @@ const Sidebar = () => {
         />
       )}
       <aside
-        className={`fixed md:static bg-white shadow-xl w-72 md:w-64 md:min-h-screen z-40 transform transition-all duration-300 ease-in-out h-full
+        className={`fixed bg-white shadow-xl w-72 md:w-64 md:min-h-screen z-40 transform transition-all duration-300 ease-in-out h-full
         ${isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"}`}
       >
         <div className="bg-gradient-to-br hidden md:block  from-indigo-500 to-purple-600 px-6 py-6 border-b border-purple-400">

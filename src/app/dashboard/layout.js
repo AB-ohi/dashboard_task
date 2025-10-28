@@ -5,7 +5,10 @@ const dashboardLayout = ({children}) => {
   return (
     <div className='md:flex relative'>
         <Sidebar/>
-      {children}
+
+      <div className="md:ml-64">
+  {children}
+</div>
     </div>
   )
 }
