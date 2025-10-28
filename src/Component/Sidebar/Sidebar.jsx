@@ -35,7 +35,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <header className="flex justify-between items-center  px-4 py-4 bg-gradient-to-r from-indigo-500 to-purple-600 shadow-lg md:hidden sticky top-0 z-50 h-10">
+      <header className="flex justify-between items-center h-[70px] px-4 py-4 bg-gradient-to-r from-indigo-500 to-purple-600 shadow-lg md:hidden sticky top-0 z-50 h-10">
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="text-white focus:outline-none hover:bg-white/20 p-2 rounded-lg transition-all"
@@ -44,7 +44,9 @@ const Sidebar = () => {
         </button>
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
-            <span className="text-purple-600 font-bold text-sm">CM</span>
+            <div className='w-20'>
+                <img src="https://i.ibb.co/JyLk2f0/logo.png" alt="" />
+            </div>
           </div>
           <h1 className="text-lg font-bold text-white">CRM Dashboard</h1>
         </div>
@@ -63,7 +65,9 @@ const Sidebar = () => {
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center shadow-lg">
-                <span className="text-purple-600 font-bold">CM</span>
+                 <div className='w-20'>
+                <img src="https://i.ibb.co/JyLk2f0/logo.png" alt="" />
+            </div>
               </div>
               <div>
                 <h2 className="text-lg font-bold text-white">CRM</h2>
